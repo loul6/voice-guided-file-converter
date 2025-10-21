@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor Universal</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>🧩 Conversor Universal de Archivos</h1>
+
+  <form id="convertForm" enctype="multipart/form-data">
+    <input type="file" name="file" required><br><br>
+    <select name="target_format" required>
+      <option value="docx->pdf">Word a PDF</option>
+      <option value="pdf->docx">PDF a Word</option>
+      <option value="pdf->txt">PDF a Texto</option>
+      <option value="docx->txt">Word a Texto</option>
+      <option value="img->png">Imagen a PNG</option>
+      <option value="img->jpg">Imagen a JPG</option>
+      <option value="img->webp">Imagen a WebP</option>
+    </select><br><br>
+    <button type="submit">Convertir</button>
+  </form>
+
+  <br>
+  <div id="result"></div>
+
+  <hr>
+  <h2>🗣️ Texto a voz (navegador)</h2>
+  <textarea id="textInput" rows="4" cols="40"></textarea><br>
+  <button id="speakBtn">Hablar</button>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>

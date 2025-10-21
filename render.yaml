@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: conversor-app
+    env: python
+    buildCommand: |
+      apt-get update && apt-get install -y pandoc
+      pip install -r requirements.txt
+    startCommand: python app.py
+    plan: free
+    envVars:
+      - key: PORT
+        value: 5000
