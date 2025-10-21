@@ -1,7 +1,7 @@
-Flask==3.0.3
-python-dotenv==1.0.1
-Pillow==10.4.0
-python-docx==1.1.2
-pdfminer.six==20240710
-pdf2docx==0.5.8
-pypandoc==1.13
+Flask
+python-dotenv
+Pillow
+python-docx
+pdfminer.six
+pdf2docx
+pypandoc
